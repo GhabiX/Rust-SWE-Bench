@@ -1,0 +1,16 @@
+[package]
+name = "trace_macro"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { workspace = true, features = ["full", "extra-traits"] }
+quote.workspace = true
+proc-macro2 = "1.0"
+tracing = "0.1"
+tracing-attributes = "0.1"
+serde_json.workspace = true
+trace_common = { path = "../trace_common" }

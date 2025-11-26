@@ -1,0 +1,4 @@
+./examples/*
+./target
+./trace_cli/target/*
+./temp

@@ -1,0 +1,1 @@
+python harness/run_setup.py --log_dir logs --testbed testbed_test --result_dir setup_result/rustbench_test --swe_bench_tasks /data/RustAgent/rustbench_study/baselines/auto-code-rover/SWE-bench/data/rustbench_test.parquet --num_processes 10

@@ -1,0 +1,8 @@
+[
+    {
+        "round": "07",
+        "command": "echo 'hello world'",
+        "exit_code": null,
+        "output": "hello world"
+    }
+]

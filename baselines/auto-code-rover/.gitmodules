@@ -1,0 +1,6 @@
+[submodule "SWE-bench-docker"]
+	path = SWE-bench-docker
+	url = https://github.com/river256-cmd/SWE-bench-docker.git
+[submodule "SWE-bench"]
+	path = SWE-bench
+	url = https://github.com/river256-cmd/SWE-bench.git

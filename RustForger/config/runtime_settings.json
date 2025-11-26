@@ -1,0 +1,28 @@
+{
+  "context_optimization": {
+    "memory_management": {
+      "adaptive_trimming": false,
+      "session_retention_limit": 60,
+      "recent_window_size": 20,
+      "history_compression_start": 2,
+      "content_preview_head": 15,
+      "content_preview_tail": 15,
+      "preserve_initial_response": false
+    },
+    "performance_tuning": {
+      "token_efficiency_mode": true,
+      "memory_footprint_reduction": true,
+      "response_quality_preservation": true
+    }
+  },
+  "execution_limits": {
+    "cost_control": {
+      "primary_budget_limit": 4.0,
+      "warning_threshold": 3.5
+    },
+    "iteration_bounds": {
+      "max_interaction_cycles": 60,
+      "fallback_limit": 100
+    }
+  }
+} 

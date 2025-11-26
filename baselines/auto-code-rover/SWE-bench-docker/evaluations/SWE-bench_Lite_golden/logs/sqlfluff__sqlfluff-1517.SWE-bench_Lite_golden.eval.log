@@ -1,0 +1,137 @@
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Task Metadata:
+	- Instance ID: sqlfluff__sqlfluff-1517
+	- Testbed: sqlfluff__sqlfluff__0.6
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Command: git -c advice.detachedHead=false checkout 304a197829f98e7425a46d872ada73176137e5ae 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Std. Output:
+Previous HEAD position was 67023b85 Add __all__ attributes to __init__.py files to resolve F401 (#1949)
+HEAD is now at 304a1978 Support Group and Groups as table names (#1546)
+ 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Return Code: 0 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Command: git apply -v /home/swe-bench/temp_sqlfluff__sqlfluff-1517_pred_try.patch 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Std. Output:
+Checking patch src/sqlfluff/core/parser/helpers.py...
+Applied patch src/sqlfluff/core/parser/helpers.py cleanly.
+ 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Return Code: 0 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Command: git apply -v -R /home/swe-bench/temp_sqlfluff__sqlfluff-1517_pred_try.patch 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Std. Output:
+Checking patch src/sqlfluff/core/parser/helpers.py...
+Applied patch src/sqlfluff/core/parser/helpers.py cleanly.
+ 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Return Code: 0 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Command: git apply -v /home/swe-bench/temp_sqlfluff__sqlfluff-1517_pred.patch 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Std. Output:
+Checking patch src/sqlfluff/core/parser/helpers.py...
+Applied patch src/sqlfluff/core/parser/helpers.py cleanly.
+ 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Return Code: 0 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Command: git restore test/dialects/ansi_test.py 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Std. Output:
+ 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Return Code: 0 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Command: git apply -v /home/swe-bench/temp_sqlfluff__sqlfluff-1517_test.patch 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Std. Output:
+Checking patch test/dialects/ansi_test.py...
+Applied patch test/dialects/ansi_test.py cleanly.
+ 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Return Code: 0 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n sqlfluff__sqlfluff__0.6  pytest --no-header -rA --tb=no -p no:cacheprovider test/dialects/ansi_test.py;
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Command: conda run -n sqlfluff__sqlfluff__0.6 pytest --no-header -rA --tb=no -p no:cacheprovider test/dialects/ansi_test.py 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Std. Output:
+============================= test session starts ==============================
+collected 59 items
+
+test/dialects/ansi_test.py ............................................. [ 76%]
+..............                                                           [100%]
+
+=============================== warnings summary ===============================
+src/sqlfluff/__init__.py:9
+  /home/swe-bench/sqlfluff__sqlfluff/src/sqlfluff/__init__.py:9: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+    import pkg_resources
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+PASSED test/dialects/ansi_test.py::test__dialect__ansi__file_lex[a b-res0]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi__file_lex[b.c-res1]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi__file_lex[abc \n \t def  ;blah-res2]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[SelectKeywordSegment-select]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[NakedIdentifierSegment-online_sales]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[BareFunctionSegment-current_timestamp]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[FunctionSegment-current_timestamp()]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[NumericLiteralSegment-1000.0]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[ExpressionSegment-online_sales / 1000.0]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[IntervalExpressionSegment-INTERVAL 1 YEAR]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[ExpressionSegment-CASE WHEN id = 1 THEN 'nothing' ELSE 'test' END]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[ExpressionSegment-CASE WHEN id = 1 THEN CASE WHEN true THEN 'something' ELSE 'nothing' END ELSE 'test' END]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[ExpressionSegment-CAST(ROUND(online_sales / 1000.0) AS varchar)]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[ExpressionSegment-name NOT LIKE '%y']
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[SelectClauseElementSegment-MIN (test.id) AS min_test_id]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[ExpressionSegment-DATE_ADD(CURRENT_DATE('America/New_York'), INTERVAL 1 year)]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[ExpressionSegment-my_array[1]]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[ExpressionSegment-my_array[OFFSET(1)]]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[ExpressionSegment-my_array[5:8]]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[ExpressionSegment-4 + my_array[OFFSET(1)]]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[ExpressionSegment-bits[OFFSET(0)] + 7]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[SelectClauseElementSegment-(count_18_24 * bits[OFFSET(0)]) / audience_size AS relative_abundance]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[ExpressionSegment-count_18_24 * bits[OFFSET(0)] + count_25_34]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[SelectClauseElementSegment-(count_18_24 * bits[OFFSET(0)] + count_25_34) / audience_size AS relative_abundance]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[SelectStatementSegment-SELECT t.val/t.id FROM test WHERE id*1.0/id > 0.8]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[SelectClauseElementSegment-t.val/t.id]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[SelectClauseElementSegment-CAST(num AS INT64)]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[SelectClauseElementSegment-CAST(num AS numeric(8,4))]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[SelectClauseElementSegment-a.*]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[SelectClauseElementSegment-a.b.*]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[SelectClauseElementSegment-a.b.c.*]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[ObjectReferenceSegment-a..c.*]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[SelectClauseElementSegment--some_variable]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[SelectClauseElementSegment-- some_variable]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[ExpressionSegment-concat(left(uaid, 2), '|', right(concat('0000000', SPLIT_PART(uaid, '|', 4)), 10), '|', '00000000')]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[ExpressionSegment-c is null]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[ExpressionSegment-c is not null]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[SelectClauseElementSegment-c is null as c_isnull]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[SelectClauseElementSegment-c is not null as c_notnull]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[ExpressionSegment-NULL::INT]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[SelectClauseElementSegment-NULL::INT AS user_id]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[TruncateStatementSegment-TRUNCATE TABLE test]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_parses[TruncateStatementSegment-TRUNCATE test]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_not_match[ObjectReferenceSegment-\n     ]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_not_parse[SELECT 1 + (2 -err_locations0]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_not_parse[SELECT * FROM a ORDER BY 1 UNION SELECT * FROM b-err_locations1]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_not_parse[SELECT * FROM a LIMIT 1 UNION SELECT * FROM b-err_locations2]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_specific_segment_not_parse[SELECT * FROM a ORDER BY 1 LIMIT 1 UNION SELECT * FROM b-err_locations3]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_is_whitespace
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_parse_indented_joins[select field_1 from my_table as alias_1-True-meta_loc0]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_parse_indented_joins[select field_1 from my_table as alias_1-False-meta_loc1]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_parse_indented_joins[select field_1 from my_table as alias_1 join foo using (field_1)-True-meta_loc2]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_parse_indented_joins[select field_1 from my_table as alias_1 join foo using (field_1)-False-meta_loc3]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_multiple_semicolons[;;-Line 1, Position 1: Found unparsable section: ';;']
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_multiple_semicolons[select id from tbl;-]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_multiple_semicolons[select id from tbl;;-Could not parse: ;]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_multiple_semicolons[select id from tbl;;;;;;-Could not parse: ;;;;;]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_multiple_semicolons[select id from tbl;select id2 from tbl2;-]
+PASSED test/dialects/ansi_test.py::test__dialect__ansi_multiple_semicolons[select id from tbl;;select id2 from tbl2;-Could not parse: ;select id2 from tbl2;]
+======================== 59 passed, 1 warning in 1.79s =========================
+
+ 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Return Code: 0 
+
+>>>>> All Tests Passed
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Test script run successful 

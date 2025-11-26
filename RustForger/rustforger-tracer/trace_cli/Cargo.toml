@@ -1,0 +1,39 @@
+[package]
+name = "trace_cli"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "trace_cli"
+path = "src/lib.rs"
+
+[[bin]]
+name = "trace_cli"
+path = "src/main.rs"
+
+[[example]]
+name = "propagation_demo"
+path = "examples/propagation_demo.rs"
+
+[dependencies]
+# Core dependencies
+clap = { version = "4.0", features = ["derive"] }
+anyhow = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# AST parsing and manipulation
+syn = { version = "2.0", features = ["full", "parsing", "visit-mut", "visit"] }
+quote = "1.0"
+prettyplease = "0.2"
+
+# File and string handling
+toml_edit = "0.21"
+
+# Local workspace dependencies  
+trace_runtime = { path = "../trace_runtime" }
+trace_common = { path = "../trace_common" }
+
+[dev-dependencies]
+tempfile = "3.0"
+tokio = { version = "1.0", features = ["full"] } 

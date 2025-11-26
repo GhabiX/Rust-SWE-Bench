@@ -1,0 +1,147 @@
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Task Metadata:
+	- Instance ID: sqlfluff__sqlfluff-1625
+	- Testbed: sqlfluff__sqlfluff__0.6
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Command: git -c advice.detachedHead=false checkout 14e1a23a3166b9a645a16de96f694c77a5d4abb7 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Std. Output:
+Previous HEAD position was 67023b85 Add __all__ attributes to __init__.py files to resolve F401 (#1949)
+HEAD is now at 14e1a23a Snowflake auto increments fixes (#1620)
+ 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Return Code: 0 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Command: git apply -v /home/swe-bench/temp_sqlfluff__sqlfluff-1625_pred_try.patch 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Std. Output:
+Checking patch src/sqlfluff/rules/L031.py...
+Applied patch src/sqlfluff/rules/L031.py cleanly.
+ 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Return Code: 0 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Command: git apply -v -R /home/swe-bench/temp_sqlfluff__sqlfluff-1625_pred_try.patch 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Std. Output:
+Checking patch src/sqlfluff/rules/L031.py...
+Applied patch src/sqlfluff/rules/L031.py cleanly.
+ 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Return Code: 0 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Command: git apply -v /home/swe-bench/temp_sqlfluff__sqlfluff-1625_pred.patch 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Std. Output:
+Checking patch src/sqlfluff/rules/L031.py...
+Applied patch src/sqlfluff/rules/L031.py cleanly.
+ 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Return Code: 0 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Command: git restore test/cli/commands_test.py 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Std. Output:
+ 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Return Code: 0 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Command: git apply -v /home/swe-bench/temp_sqlfluff__sqlfluff-1625_test.patch 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Std. Output:
+Checking patch test/cli/commands_test.py...
+Applied patch test/cli/commands_test.py cleanly.
+ 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Return Code: 0 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n sqlfluff__sqlfluff__0.6  pytest --no-header -rA --tb=no -p no:cacheprovider test/cli/commands_test.py;
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Command: conda run -n sqlfluff__sqlfluff__0.6 pytest --no-header -rA --tb=no -p no:cacheprovider test/cli/commands_test.py 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Std. Output:
+============================= test session starts ==============================
+collected 69 items
+
+test/cli/commands_test.py .............................................. [ 66%]
+.......................                                                  [100%]
+
+=============================== warnings summary ===============================
+src/sqlfluff/__init__.py:9
+  /home/swe-bench/sqlfluff__sqlfluff/src/sqlfluff/__init__.py:9: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+    import pkg_resources
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+PASSED test/cli/commands_test.py::test__cli__command_directed
+PASSED test/cli/commands_test.py::test__cli__command_dialect
+PASSED test/cli/commands_test.py::test__cli__command_dialect_legacy
+PASSED test/cli/commands_test.py::test__cli__command_lint_stdin[command0]
+PASSED test/cli/commands_test.py::test__cli__command_lint_stdin[command1]
+PASSED test/cli/commands_test.py::test__cli__command_lint_stdin[command2]
+PASSED test/cli/commands_test.py::test__cli__command_lint_stdin[command3]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse[command0]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse[command1]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse[command2]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse[command3]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse[command4]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse[command5]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse[command6]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse[command7]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse[command8]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse[command9]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse[command10]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse[command11]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse[command12]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse[command13]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse[command14]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse[command15]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse[command16]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse[command17]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse[command18]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse[command19]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse[command20]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse[command21]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse_with_retcode[command0-1]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse_with_retcode[command1-1]
+PASSED test/cli/commands_test.py::test__cli__command_lint_parse_with_retcode[command2-1]
+PASSED test/cli/commands_test.py::test__cli__command_lint_warning_explicit_file_ignored
+PASSED test/cli/commands_test.py::test__cli__command_lint_skip_ignore_files
+PASSED test/cli/commands_test.py::test__cli__command_versioning
+PASSED test/cli/commands_test.py::test__cli__command_version
+PASSED test/cli/commands_test.py::test__cli__command_rules
+PASSED test/cli/commands_test.py::test__cli__command_dialects
+PASSED test/cli/commands_test.py::test__cli__command__fix[L001-test/fixtures/linter/indentation_errors.sql]
+PASSED test/cli/commands_test.py::test__cli__command__fix[L008-test/fixtures/linter/whitespace_errors.sql]
+PASSED test/cli/commands_test.py::test__cli__command__fix[L008-test/fixtures/linter/indentation_errors.sql]
+PASSED test/cli/commands_test.py::test__cli__command__fix[L003-test/fixtures/linter/indentation_error_hard.sql]
+PASSED test/cli/commands_test.py::test__cli__command_fix_stdin[select * from t-L003-select * from t]
+PASSED test/cli/commands_test.py::test__cli__command_fix_stdin[ select * from t-L003-select * from t]
+PASSED test/cli/commands_test.py::test__cli__command_fix_stdin[SELECT u.id, c.first_name, c.last_name, COUNT(o.user_id) FROM users as u JOIN customers as c on u.id = c.user_id JOIN orders as o on u.id = o.user_id;-L031-SELECT users.id, customers.first_name, customers.last_name, COUNT(orders.user_id) FROM users JOIN customers on users.id = customers.user_id JOIN orders on users.id = orders.user_id;]
+PASSED test/cli/commands_test.py::test__cli__command_fix_stdin_logging_to_stderr
+PASSED test/cli/commands_test.py::test__cli__command_fix_stdin_safety
+PASSED test/cli/commands_test.py::test__cli__command_fix_stdin_error_exit_code[create TABLE {{ params.dsfsdfds }}.t (a int)-1--v-Fix aborted due to unparseable template variables.]
+PASSED test/cli/commands_test.py::test__cli__command_fix_stdin_error_exit_code[create TABLE a.t (a int)-0--]
+PASSED test/cli/commands_test.py::test__cli__command_fix_stdin_error_exit_code[create table a.t (a int)-0--]
+PASSED test/cli/commands_test.py::test__cli__command_fix_stdin_error_exit_code[select col from a join b using (c)-1--v-Unfixable violations detected.]
+PASSED test/cli/commands_test.py::test__cli__command__fix_no_force[L001-test/fixtures/linter/indentation_errors.sql-y-0-0]
+PASSED test/cli/commands_test.py::test__cli__command__fix_no_force[L001-test/fixtures/linter/indentation_errors.sql-n-65-1]
+PASSED test/cli/commands_test.py::test__cli__command_parse_serialize_from_stdin[yaml]
+PASSED test/cli/commands_test.py::test__cli__command_parse_serialize_from_stdin[json]
+PASSED test/cli/commands_test.py::test__cli__command_lint_serialize_from_stdin[select * from tbl-expected0-0-yaml]
+PASSED test/cli/commands_test.py::test__cli__command_lint_serialize_from_stdin[select * from tbl-expected0-0-json]
+PASSED test/cli/commands_test.py::test__cli__command_lint_serialize_from_stdin[SElect * from tbl-expected1-65-yaml]
+PASSED test/cli/commands_test.py::test__cli__command_lint_serialize_from_stdin[SElect * from tbl-expected1-65-json]
+PASSED test/cli/commands_test.py::test__cli__command_fail_nice_not_found[command0]
+PASSED test/cli/commands_test.py::test__cli__command_fail_nice_not_found[command1]
+PASSED test/cli/commands_test.py::test__cli__command_lint_serialize_multiple_files[yaml]
+PASSED test/cli/commands_test.py::test__cli__command_lint_serialize_multiple_files[json]
+PASSED test/cli/commands_test.py::test__cli__command_lint_serialize_multiple_files[github-annotation]
+PASSED test/cli/commands_test.py::test__cli__command_lint_serialize_github_annotation
+PASSED test/cli/commands_test.py::test___main___help
+PASSED test/cli/commands_test.py::test_encoding[utf-8-ascii]
+PASSED test/cli/commands_test.py::test_encoding[utf-8-sig-UTF-8-SIG]
+PASSED test/cli/commands_test.py::test_encoding[utf-32-UTF-32]
+======================== 69 passed, 1 warning in 9.37s =========================
+
+ 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Return Code: 0 
+
+>>>>> All Tests Passed
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Test script run successful 

@@ -1,0 +1,6 @@
+rich
+docker
+datasets
+lxml
+requests
+typer

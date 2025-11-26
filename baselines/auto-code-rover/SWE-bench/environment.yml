@@ -1,0 +1,18 @@
+name: swe-bench
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+    - beautifulsoup4
+    - chardet
+    - ghapi
+    - GitPython
+    - python-dotenv
+    - httpx
+    - requests
+    - rich
+    - transformers>=4.34.0
+    - pandas
+    - pyarrow
+    - datasets
+  - conda-forge::gh

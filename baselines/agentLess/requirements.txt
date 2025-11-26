@@ -1,0 +1,15 @@
+anthropic
+openai
+pre-commit
+datasets
+tiktoken
+libcst
+llama-index
+jsonlines
+swebench @ git+https://github.com/princeton-nlp/SWE-bench
+tree-sitter
+tree-sitter-java
+tree-sitter-typescript
+tree-sitter-rust
+tree-sitter-go
+tree-sitter-cpp

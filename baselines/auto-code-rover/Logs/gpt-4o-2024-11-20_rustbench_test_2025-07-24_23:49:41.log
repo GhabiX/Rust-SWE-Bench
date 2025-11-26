@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/data/RustAgent/rustbench_study/baselines/auto-code-rover/app/main.py", line 22, in <module>
+    from loguru import logger
+ModuleNotFoundError: No module named 'loguru'
