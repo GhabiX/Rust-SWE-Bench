@@ -49,10 +49,12 @@ python -m swebench.harness.run_evaluation \
     --dataset_name user2f86/rustbench \
     --predictions_path <path_to_your_predictions> \
     --max_workers <num_workers> \
-    --run_id <your_run_id>
+    --run_id <your_run_id> \
+    --config_path swebench/harness/logs/config.json \
+    --build_image_only 0
 ```
 
-This command generates Docker build logs (`logs/build_images`) and evaluation logs (`logs/run_evaluation`). The final results are stored in the `evaluation_results/` directory.
+This command generates Docker build logs (`logs/build_images`) and evaluation logs (`logs/run_evaluation`). Per-instance reports are stored under `logs/run_evaluation/<run_id>/<model>/<instance_id>/report.json`, and the final summary is stored in the `reports/` directory.
 
 ## RustForger
 
@@ -252,4 +254,3 @@ bash replay.sh
 - **Execution Environment:** The full command replay is executed within the agent's native environment, typically encapsulated within a Docker container.
 - **Data Capture:** During the replay process, critical execution artifacts are captured for each command, including standard output (stdout), standard error (stderr), and the final exit code.
 - **Detailed Documentation:** For comprehensive instructions and advanced usage, please consult the `README.md` file located in the `reproduce/reproduction-replay/` directory.
-
