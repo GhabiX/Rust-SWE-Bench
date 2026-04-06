@@ -35,7 +35,7 @@ python run_evaluation.py \
 ```
 
 > [!TIP]
-> Running evaluations can be resource-intensive. For optimal performance, we recommend the following system specifications:
+> Running Rustbench is resource intensive. To avoid storage issues, we recommend the following system specifications:
 >
 > - **Architecture:** x86_64
 > - **Storage:** At least 120GB of free space
